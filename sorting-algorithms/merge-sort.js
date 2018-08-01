@@ -8,12 +8,10 @@ mergeSort = arr => {
   } else {
     let middle = Math.floor(arr.length / 2);
     let left = arr.slice(0, middle);
-    console.log("left: ", left);
-    console.log("right: ", right);
+    // console.log("left: ", left);
+    // console.log("right: ", right);
     let right = arr.slice(middle, arr.length);
     debugger;
-
-    console.log();
     return merge(mergeSort(left), mergeSort(right)); // this is a recursive call.
   }
 };
@@ -34,3 +32,7 @@ merge = (left, right) => {
 };
 
 console.log(mergeSort(array));
+
+module.exports = {
+  mergeSort
+};

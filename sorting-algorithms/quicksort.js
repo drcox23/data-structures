@@ -23,3 +23,6 @@ quickSort = array => {
 
 console.log(quickSort(array));
 // console.timeEnd("run");
+module.exports = {
+  quickSort
+};
